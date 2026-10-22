@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RailwayOne Pro station dataset",
+  "type": "object",
+  "required": ["dataset", "version", "stations"],
+  "properties": {
+    "dataset": { "type": "string" },
+    "version": { "type": "string" },
+    "license": { "type": "string" },
+    "stations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["code", "name", "city", "state", "zone", "lat", "lng"],
+        "properties": {
+          "code": { "type": "string", "pattern": "^[A-Z]{1,5}$" },
+          "name": { "type": "string" },
+          "city": { "type": "string" },
+          "state": { "type": "string" },
+          "zone": { "type": "string" },
+          "lat": { "type": "number" },
+          "lng": { "type": "number" },
+          "isPopular": { "type": "boolean" }
+        }
+      }
+    }
+  }
+}

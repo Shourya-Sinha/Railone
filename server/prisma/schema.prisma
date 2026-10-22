@@ -1,0 +1,226 @@
+// RailwayOne Pro — DEMO-ONLY data model.
+// Nothing in this schema represents a real railway reservation or payment.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+enum BookingType {
+  UNRESERVED
+  PLATFORM
+}
+
+enum BookingStatus {
+  PENDING_PAYMENT
+  CONFIRMED
+  CANCELLED
+  EXPIRED
+}
+
+enum TrainType {
+  ORDINARY
+  EXPRESS
+  SUPERFAST
+}
+
+enum TxnType {
+  BOOKING_PAYMENT
+  REFUND
+  WALLET_TOPUP
+}
+
+enum TxnStatus {
+  SUCCESS
+  FAILED
+}
+
+enum PaymentMethod {
+  WALLET
+  DEMO_UPI
+  DEMO_CARD
+}
+
+model User {
+  id                 String    @id @default(cuid())
+  email              String    @unique
+  name               String
+  phone              String?
+  passwordHash       String
+  role               Role      @default(USER)
+  disabled           Boolean   @default(false)
+  walletBalancePaise Int       @default(0)
+  preferences        Json      @default("{}")
+  lastLoginAt        DateTime?
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
+
+  sessions        Session[]
+  bookings        Booking[]
+  transactions    Transaction[]
+  notifications   Notification[]
+  supportRequests SupportRequest[]
+
+  @@index([createdAt])
+}
+
+model Session {
+  id        String   @id @default(cuid())
+  tokenHash String   @unique
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userAgent String?
+  ip        String?
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model Station {
+  id        Int      @id @default(autoincrement())
+  code      String   @unique
+  name      String
+  city      String
+  state     String
+  zone      String
+  lat       Float
+  lng       Float
+  isPopular Boolean  @default(false)
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  departures   Booking[] @relation("BookingSource")
+  arrivals     Booking[] @relation("BookingDestination")
+
+  @@index([name])
+  @@index([zone])
+}
+
+model Booking {
+  id               String         @id @default(cuid())
+  bookingRef       String         @unique
+  userId           String
+  user             User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type             BookingType
+  status           BookingStatus  @default(PENDING_PAYMENT)
+  sourceId         Int
+  source           Station        @relation("BookingSource", fields: [sourceId], references: [id])
+  destinationId    Int?
+  destination      Station?       @relation("BookingDestination", fields: [destinationId], references: [id])
+  journeyDate      DateTime       @db.Date
+  trainType        TrainType?
+  trainNumber      String?
+  trainName        String?
+  classCode        String         @default("II")
+  adults           Int
+  children         Int            @default(0)
+  distanceKm       Int?
+  fareBreakdown    Json
+  totalFarePaise   Int
+  fareTableVersion String
+  paymentMethod    PaymentMethod?
+  qrPayload        String?
+  holdExpiresAt    DateTime?
+  validFrom        DateTime?
+  validUntil       DateTime?
+  paidAt           DateTime?
+  cancelledAt      DateTime?
+  refundPaise      Int?
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+
+  transactions Transaction[]
+
+  @@index([userId, createdAt])
+  @@index([status])
+  @@index([createdAt])
+}
+
+model Transaction {
+  id                String         @id @default(cuid())
+  txnRef            String         @unique
+  userId            String
+  user              User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  bookingId         String?
+  booking           Booking?       @relation(fields: [bookingId], references: [id], onDelete: SetNull)
+  type              TxnType
+  status            TxnStatus
+  method            PaymentMethod
+  amountPaise       Int
+  balanceAfterPaise Int?
+  failureReason     String?
+  meta              Json?
+  createdAt         DateTime       @default(now())
+
+  @@index([userId, createdAt])
+  @@index([createdAt])
+  @@index([type, status])
+}
+
+model Notification {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  kind      String
+  title     String
+  body      String
+  link      String?
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([userId, createdAt])
+}
+
+model SupportRequest {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  category  String
+  subject   String
+  message   String
+  status    String   @default("OPEN")
+  createdAt DateTime @default(now())
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  actorId   String?
+  action    String
+  entity    String
+  entityId  String?
+  meta      Json?
+  ip        String?
+  createdAt DateTime @default(now())
+
+  @@index([action])
+  @@index([createdAt])
+}
+
+model ErrorLog {
+  id        String   @id @default(cuid())
+  level     String
+  source    String   @default("server")
+  message   String
+  stack     String?
+  path      String?
+  method    String?
+  status    Int?
+  userId    String?
+  requestId String?
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([level])
+}
