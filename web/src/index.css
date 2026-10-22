@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+  --color-brand-50: #eef4ff;
+  --color-brand-100: #dce7fd;
+  --color-brand-200: #b9cffb;
+  --color-brand-300: #8aaef5;
+  --color-brand-400: #4f7fe6;
+  --color-brand-500: #2a5fd4;
+  --color-brand-600: #1a4cb8;
+  --color-brand-700: #123f9e;
+  --color-brand-800: #0b3a8c;
+  --color-brand-900: #0a2a66;
+  --color-brand-950: #071a42;
+  --color-saffron-50: #fff5eb;
+  --color-saffron-100: #ffe6cc;
+  --color-saffron-200: #ffcc99;
+  --color-saffron-400: #f7a14d;
+  --color-saffron-500: #f28c28;
+  --color-saffron-600: #d9731a;
+  --color-saffron-700: #b25a12;
+  --shadow-card: 0 1px 2px rgb(16 24 40 / 0.04), 0 4px 16px -4px rgb(16 24 40 / 0.08);
+  --shadow-raised: 0 8px 28px -8px rgb(11 58 140 / 0.28);
+  --animate-fade-up: fade-up 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
+  --animate-sheet-up: sheet-up 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  --animate-pop: pop 0.45s cubic-bezier(0.2, 1.4, 0.4, 1);
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes sheet-up {
+  from { transform: translateY(100%); }
+  to { transform: none; }
+}
+@keyframes pop {
+  0% { transform: scale(0.4); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@layer base {
+  html { -webkit-tap-highlight-color: transparent; }
+  body { @apply bg-slate-50 text-slate-900 antialiased; font-feature-settings: "cv11", "ss01"; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-brand-500; }
+  button, [role="button"] { cursor: pointer; }
+  button:disabled { cursor: not-allowed; }
+}
+
+@utility pb-safe {
+  padding-bottom: max(env(safe-area-inset-bottom), 0px);
+}
+
+.ticket-notch {
+  --notch: 14px;
+  mask: radial-gradient(circle var(--notch) at left center, transparent 98%, #000) left / 51% 100% no-repeat,
+        radial-gradient(circle var(--notch) at right center, transparent 98%, #000) right / 51% 100% no-repeat;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+/* Print-friendly ticket */
+@media print {
+  @page { margin: 12mm; }
+  body { background: #fff !important; }
+  .no-print { display: none !important; }
+  .print-area { box-shadow: none !important; max-width: 100% !important; margin: 0 !important; }
+  .print-area * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  main { padding: 0 !important; }
+}

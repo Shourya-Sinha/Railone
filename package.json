@@ -1,0 +1,22 @@
+{
+  "name": "railwayone-pro",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RailwayOne Pro — an original, DEMO-ONLY Indian railway booking prototype. Not an official Indian Railways product.",
+  "workspaces": ["server", "web"],
+  "scripts": {
+    "dev": "npm run dev -w server & npm run dev -w web",
+    "dev:server": "npm run dev -w server",
+    "dev:web": "npm run dev -w web",
+    "db:migrate": "npm run db:migrate -w server",
+    "db:deploy": "npm run db:deploy -w server",
+    "db:seed": "npm run db:seed -w server",
+    "db:reset": "npm run db:reset -w server",
+    "build": "npm run build -w server && npm run build -w web",
+    "start": "npm run start -w server",
+    "test": "npm run test -w server && npm run test -w web",
+    "test:e2e": "npm run test:e2e -w web",
+    "typecheck": "npm run typecheck -w server && npm run typecheck -w web"
+  },
+  "engines": { "node": ">=20.19" }
+}

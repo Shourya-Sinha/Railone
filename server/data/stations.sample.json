@@ -1,0 +1,1328 @@
+{
+ "$schema": "./stations.schema.json",
+ "dataset": "RailwayOne Pro sample stations",
+ "version": "2026.10-sample",
+ "license": "Sample data compiled for demonstration only. Coordinates are approximate. Replace with a properly licensed/authorised source before any real use.",
+ "stations": [
+  {
+   "code": "NDLS",
+   "name": "New Delhi",
+   "city": "New Delhi",
+   "state": "Delhi",
+   "zone": "NR",
+   "lat": 28.643,
+   "lng": 77.2194,
+   "isPopular": true
+  },
+  {
+   "code": "DLI",
+   "name": "Delhi Junction",
+   "city": "Delhi",
+   "state": "Delhi",
+   "zone": "NR",
+   "lat": 28.661,
+   "lng": 77.228,
+   "isPopular": false
+  },
+  {
+   "code": "NZM",
+   "name": "Hazrat Nizamuddin",
+   "city": "New Delhi",
+   "state": "Delhi",
+   "zone": "NR",
+   "lat": 28.588,
+   "lng": 77.253,
+   "isPopular": true
+  },
+  {
+   "code": "ANVT",
+   "name": "Anand Vihar Terminal",
+   "city": "Delhi",
+   "state": "Delhi",
+   "zone": "NR",
+   "lat": 28.6505,
+   "lng": 77.3155,
+   "isPopular": false
+  },
+  {
+   "code": "DEE",
+   "name": "Delhi Sarai Rohilla",
+   "city": "Delhi",
+   "state": "Delhi",
+   "zone": "NR",
+   "lat": 28.665,
+   "lng": 77.186,
+   "isPopular": false
+  },
+  {
+   "code": "GZB",
+   "name": "Ghaziabad",
+   "city": "Ghaziabad",
+   "state": "Uttar Pradesh",
+   "zone": "NR",
+   "lat": 28.65,
+   "lng": 77.432,
+   "isPopular": false
+  },
+  {
+   "code": "CSMT",
+   "name": "Chhatrapati Shivaji Maharaj Terminus",
+   "city": "Mumbai",
+   "state": "Maharashtra",
+   "zone": "CR",
+   "lat": 18.94,
+   "lng": 72.8355,
+   "isPopular": true
+  },
+  {
+   "code": "MMCT",
+   "name": "Mumbai Central",
+   "city": "Mumbai",
+   "state": "Maharashtra",
+   "zone": "WR",
+   "lat": 18.969,
+   "lng": 72.8195,
+   "isPopular": true
+  },
+  {
+   "code": "LTT",
+   "name": "Lokmanya Tilak Terminus",
+   "city": "Mumbai",
+   "state": "Maharashtra",
+   "zone": "CR",
+   "lat": 19.069,
+   "lng": 72.89,
+   "isPopular": false
+  },
+  {
+   "code": "BDTS",
+   "name": "Bandra Terminus",
+   "city": "Mumbai",
+   "state": "Maharashtra",
+   "zone": "WR",
+   "lat": 19.0625,
+   "lng": 72.841,
+   "isPopular": false
+  },
+  {
+   "code": "DR",
+   "name": "Dadar",
+   "city": "Mumbai",
+   "state": "Maharashtra",
+   "zone": "CR",
+   "lat": 19.0186,
+   "lng": 72.843,
+   "isPopular": false
+  },
+  {
+   "code": "TNA",
+   "name": "Thane",
+   "city": "Thane",
+   "state": "Maharashtra",
+   "zone": "CR",
+   "lat": 19.186,
+   "lng": 72.975,
+   "isPopular": false
+  },
+  {
+   "code": "KYN",
+   "name": "Kalyan Junction",
+   "city": "Kalyan",
+   "state": "Maharashtra",
+   "zone": "CR",
+   "lat": 19.2355,
+   "lng": 73.1305,
+   "isPopular": false
+  },
+  {
+   "code": "PUNE",
+   "name": "Pune Junction",
+   "city": "Pune",
+   "state": "Maharashtra",
+   "zone": "CR",
+   "lat": 18.5285,
+   "lng": 73.874,
+   "isPopular": true
+  },
+  {
+   "code": "NK",
+   "name": "Nashik Road",
+   "city": "Nashik",
+   "state": "Maharashtra",
+   "zone": "CR",
+   "lat": 19.948,
+   "lng": 73.842,
+   "isPopular": false
+  },
+  {
+   "code": "MMR",
+   "name": "Manmad Junction",
+   "city": "Manmad",
+   "state": "Maharashtra",
+   "zone": "CR",
+   "lat": 20.251,
+   "lng": 74.437,
+   "isPopular": false
+  },
+  {
+   "code": "BSL",
+   "name": "Bhusaval Junction",
+   "city": "Bhusaval",
+   "state": "Maharashtra",
+   "zone": "CR",
+   "lat": 21.048,
+   "lng": 75.788,
+   "isPopular": false
+  },
+  {
+   "code": "NGP",
+   "name": "Nagpur Junction",
+   "city": "Nagpur",
+   "state": "Maharashtra",
+   "zone": "CR",
+   "lat": 21.152,
+   "lng": 79.088,
+   "isPopular": true
+  },
+  {
+   "code": "SUR",
+   "name": "Solapur",
+   "city": "Solapur",
+   "state": "Maharashtra",
+   "zone": "CR",
+   "lat": 17.664,
+   "lng": 75.893,
+   "isPopular": false
+  },
+  {
+   "code": "KOP",
+   "name": "Kolhapur SCSMT",
+   "city": "Kolhapur",
+   "state": "Maharashtra",
+   "zone": "CR",
+   "lat": 16.703,
+   "lng": 74.24,
+   "isPopular": false
+  },
+  {
+   "code": "AWB",
+   "name": "Chhatrapati Sambhajinagar",
+   "city": "Chhatrapati Sambhajinagar",
+   "state": "Maharashtra",
+   "zone": "SCR",
+   "lat": 19.863,
+   "lng": 75.315,
+   "isPopular": false
+  },
+  {
+   "code": "HWH",
+   "name": "Howrah Junction",
+   "city": "Kolkata",
+   "state": "West Bengal",
+   "zone": "ER",
+   "lat": 22.5835,
+   "lng": 88.3425,
+   "isPopular": true
+  },
+  {
+   "code": "SDAH",
+   "name": "Sealdah",
+   "city": "Kolkata",
+   "state": "West Bengal",
+   "zone": "ER",
+   "lat": 22.5675,
+   "lng": 88.37,
+   "isPopular": true
+  },
+  {
+   "code": "KOAA",
+   "name": "Kolkata",
+   "city": "Kolkata",
+   "state": "West Bengal",
+   "zone": "ER",
+   "lat": 22.604,
+   "lng": 88.38,
+   "isPopular": false
+  },
+  {
+   "code": "ASN",
+   "name": "Asansol Junction",
+   "city": "Asansol",
+   "state": "West Bengal",
+   "zone": "ER",
+   "lat": 23.691,
+   "lng": 86.975,
+   "isPopular": false
+  },
+  {
+   "code": "KGP",
+   "name": "Kharagpur Junction",
+   "city": "Kharagpur",
+   "state": "West Bengal",
+   "zone": "SER",
+   "lat": 22.339,
+   "lng": 87.325,
+   "isPopular": false
+  },
+  {
+   "code": "NJP",
+   "name": "New Jalpaiguri",
+   "city": "Siliguri",
+   "state": "West Bengal",
+   "zone": "NFR",
+   "lat": 26.684,
+   "lng": 88.443,
+   "isPopular": false
+  },
+  {
+   "code": "BWN",
+   "name": "Barddhaman Junction",
+   "city": "Barddhaman",
+   "state": "West Bengal",
+   "zone": "ER",
+   "lat": 23.249,
+   "lng": 87.869,
+   "isPopular": false
+  },
+  {
+   "code": "MAS",
+   "name": "Chennai Central",
+   "city": "Chennai",
+   "state": "Tamil Nadu",
+   "zone": "SR",
+   "lat": 13.0825,
+   "lng": 80.275,
+   "isPopular": true
+  },
+  {
+   "code": "MS",
+   "name": "Chennai Egmore",
+   "city": "Chennai",
+   "state": "Tamil Nadu",
+   "zone": "SR",
+   "lat": 13.078,
+   "lng": 80.261,
+   "isPopular": false
+  },
+  {
+   "code": "TBM",
+   "name": "Tambaram",
+   "city": "Chennai",
+   "state": "Tamil Nadu",
+   "zone": "SR",
+   "lat": 12.9245,
+   "lng": 80.1275,
+   "isPopular": false
+  },
+  {
+   "code": "KPD",
+   "name": "Katpadi Junction",
+   "city": "Vellore",
+   "state": "Tamil Nadu",
+   "zone": "SR",
+   "lat": 12.971,
+   "lng": 79.138,
+   "isPopular": false
+  },
+  {
+   "code": "SA",
+   "name": "Salem Junction",
+   "city": "Salem",
+   "state": "Tamil Nadu",
+   "zone": "SR",
+   "lat": 11.672,
+   "lng": 78.117,
+   "isPopular": false
+  },
+  {
+   "code": "CBE",
+   "name": "Coimbatore Junction",
+   "city": "Coimbatore",
+   "state": "Tamil Nadu",
+   "zone": "SR",
+   "lat": 10.997,
+   "lng": 76.967,
+   "isPopular": false
+  },
+  {
+   "code": "TPJ",
+   "name": "Tiruchchirappalli Junction",
+   "city": "Tiruchchirappalli",
+   "state": "Tamil Nadu",
+   "zone": "SR",
+   "lat": 10.796,
+   "lng": 78.687,
+   "isPopular": false
+  },
+  {
+   "code": "MDU",
+   "name": "Madurai Junction",
+   "city": "Madurai",
+   "state": "Tamil Nadu",
+   "zone": "SR",
+   "lat": 9.919,
+   "lng": 78.111,
+   "isPopular": false
+  },
+  {
+   "code": "SBC",
+   "name": "KSR Bengaluru City",
+   "city": "Bengaluru",
+   "state": "Karnataka",
+   "zone": "SWR",
+   "lat": 12.978,
+   "lng": 77.5695,
+   "isPopular": true
+  },
+  {
+   "code": "YPR",
+   "name": "Yesvantpur Junction",
+   "city": "Bengaluru",
+   "state": "Karnataka",
+   "zone": "SWR",
+   "lat": 13.023,
+   "lng": 77.55,
+   "isPopular": false
+  },
+  {
+   "code": "SMVB",
+   "name": "SMVT Bengaluru",
+   "city": "Bengaluru",
+   "state": "Karnataka",
+   "zone": "SWR",
+   "lat": 12.993,
+   "lng": 77.661,
+   "isPopular": false
+  },
+  {
+   "code": "MYS",
+   "name": "Mysuru Junction",
+   "city": "Mysuru",
+   "state": "Karnataka",
+   "zone": "SWR",
+   "lat": 12.316,
+   "lng": 76.645,
+   "isPopular": false
+  },
+  {
+   "code": "UBL",
+   "name": "Hubballi Junction",
+   "city": "Hubballi",
+   "state": "Karnataka",
+   "zone": "SWR",
+   "lat": 15.35,
+   "lng": 75.149,
+   "isPopular": false
+  },
+  {
+   "code": "MAQ",
+   "name": "Mangaluru Central",
+   "city": "Mangaluru",
+   "state": "Karnataka",
+   "zone": "SR",
+   "lat": 12.864,
+   "lng": 74.842,
+   "isPopular": false
+  },
+  {
+   "code": "SC",
+   "name": "Secunderabad Junction",
+   "city": "Hyderabad",
+   "state": "Telangana",
+   "zone": "SCR",
+   "lat": 17.4335,
+   "lng": 78.5015,
+   "isPopular": true
+  },
+  {
+   "code": "HYB",
+   "name": "Hyderabad Deccan",
+   "city": "Hyderabad",
+   "state": "Telangana",
+   "zone": "SCR",
+   "lat": 17.392,
+   "lng": 78.4675,
+   "isPopular": false
+  },
+  {
+   "code": "KCG",
+   "name": "Kacheguda",
+   "city": "Hyderabad",
+   "state": "Telangana",
+   "zone": "SCR",
+   "lat": 17.3895,
+   "lng": 78.5,
+   "isPopular": false
+  },
+  {
+   "code": "BZA",
+   "name": "Vijayawada Junction",
+   "city": "Vijayawada",
+   "state": "Andhra Pradesh",
+   "zone": "SCR",
+   "lat": 16.518,
+   "lng": 80.62,
+   "isPopular": false
+  },
+  {
+   "code": "GNT",
+   "name": "Guntur Junction",
+   "city": "Guntur",
+   "state": "Andhra Pradesh",
+   "zone": "SCR",
+   "lat": 16.299,
+   "lng": 80.443,
+   "isPopular": false
+  },
+  {
+   "code": "TPTY",
+   "name": "Tirupati",
+   "city": "Tirupati",
+   "state": "Andhra Pradesh",
+   "zone": "SCR",
+   "lat": 13.629,
+   "lng": 79.419,
+   "isPopular": false
+  },
+  {
+   "code": "VSKP",
+   "name": "Visakhapatnam",
+   "city": "Visakhapatnam",
+   "state": "Andhra Pradesh",
+   "zone": "ECoR",
+   "lat": 17.722,
+   "lng": 83.29,
+   "isPopular": false
+  },
+  {
+   "code": "PNBE",
+   "name": "Patna Junction",
+   "city": "Patna",
+   "state": "Bihar",
+   "zone": "ECR",
+   "lat": 25.603,
+   "lng": 85.137,
+   "isPopular": true
+  },
+  {
+   "code": "RJPB",
+   "name": "Rajendra Nagar Terminal",
+   "city": "Patna",
+   "state": "Bihar",
+   "zone": "ECR",
+   "lat": 25.6005,
+   "lng": 85.165,
+   "isPopular": false
+  },
+  {
+   "code": "PPTA",
+   "name": "Patliputra Junction",
+   "city": "Patna",
+   "state": "Bihar",
+   "zone": "ECR",
+   "lat": 25.6205,
+   "lng": 85.0915,
+   "isPopular": false
+  },
+  {
+   "code": "DNR",
+   "name": "Danapur",
+   "city": "Patna",
+   "state": "Bihar",
+   "zone": "ECR",
+   "lat": 25.585,
+   "lng": 85.045,
+   "isPopular": false
+  },
+  {
+   "code": "GAYA",
+   "name": "Gaya Junction",
+   "city": "Gaya",
+   "state": "Bihar",
+   "zone": "ECR",
+   "lat": 24.803,
+   "lng": 85.001,
+   "isPopular": false
+  },
+  {
+   "code": "MFP",
+   "name": "Muzaffarpur Junction",
+   "city": "Muzaffarpur",
+   "state": "Bihar",
+   "zone": "ECR",
+   "lat": 26.12,
+   "lng": 85.38,
+   "isPopular": false
+  },
+  {
+   "code": "DBG",
+   "name": "Darbhanga Junction",
+   "city": "Darbhanga",
+   "state": "Bihar",
+   "zone": "ECR",
+   "lat": 26.153,
+   "lng": 85.899,
+   "isPopular": false
+  },
+  {
+   "code": "SPJ",
+   "name": "Samastipur Junction",
+   "city": "Samastipur",
+   "state": "Bihar",
+   "zone": "ECR",
+   "lat": 25.862,
+   "lng": 85.78,
+   "isPopular": false
+  },
+  {
+   "code": "HJP",
+   "name": "Hajipur Junction",
+   "city": "Hajipur",
+   "state": "Bihar",
+   "zone": "ECR",
+   "lat": 25.69,
+   "lng": 85.212,
+   "isPopular": false
+  },
+  {
+   "code": "BJU",
+   "name": "Barauni Junction",
+   "city": "Begusarai",
+   "state": "Bihar",
+   "zone": "ECR",
+   "lat": 25.473,
+   "lng": 85.978,
+   "isPopular": false
+  },
+  {
+   "code": "ARA",
+   "name": "Ara Junction",
+   "city": "Ara",
+   "state": "Bihar",
+   "zone": "ECR",
+   "lat": 25.56,
+   "lng": 84.663,
+   "isPopular": false
+  },
+  {
+   "code": "BXR",
+   "name": "Buxar",
+   "city": "Buxar",
+   "state": "Bihar",
+   "zone": "ECR",
+   "lat": 25.565,
+   "lng": 83.98,
+   "isPopular": false
+  },
+  {
+   "code": "SSM",
+   "name": "Sasaram Junction",
+   "city": "Sasaram",
+   "state": "Bihar",
+   "zone": "ECR",
+   "lat": 24.948,
+   "lng": 84.032,
+   "isPopular": false
+  },
+  {
+   "code": "KIUL",
+   "name": "Kiul Junction",
+   "city": "Lakhisarai",
+   "state": "Bihar",
+   "zone": "ER",
+   "lat": 25.17,
+   "lng": 86.096,
+   "isPopular": false
+  },
+  {
+   "code": "JAJ",
+   "name": "Jhajha",
+   "city": "Jhajha",
+   "state": "Bihar",
+   "zone": "ER",
+   "lat": 24.771,
+   "lng": 86.379,
+   "isPopular": false
+  },
+  {
+   "code": "MKA",
+   "name": "Mokama",
+   "city": "Mokama",
+   "state": "Bihar",
+   "zone": "ECR",
+   "lat": 25.399,
+   "lng": 85.92,
+   "isPopular": false
+  },
+  {
+   "code": "BKP",
+   "name": "Bakhtiyarpur Junction",
+   "city": "Bakhtiyarpur",
+   "state": "Bihar",
+   "zone": "ECR",
+   "lat": 25.459,
+   "lng": 85.532,
+   "isPopular": false
+  },
+  {
+   "code": "RGD",
+   "name": "Rajgir",
+   "city": "Rajgir",
+   "state": "Bihar",
+   "zone": "ECR",
+   "lat": 25.027,
+   "lng": 85.421,
+   "isPopular": false
+  },
+  {
+   "code": "SEE",
+   "name": "Sonpur Junction",
+   "city": "Sonpur",
+   "state": "Bihar",
+   "zone": "ECR",
+   "lat": 25.697,
+   "lng": 85.179,
+   "isPopular": false
+  },
+  {
+   "code": "CPR",
+   "name": "Chhapra Junction",
+   "city": "Chhapra",
+   "state": "Bihar",
+   "zone": "NER",
+   "lat": 25.78,
+   "lng": 84.73,
+   "isPopular": false
+  },
+  {
+   "code": "SV",
+   "name": "Siwan Junction",
+   "city": "Siwan",
+   "state": "Bihar",
+   "zone": "NER",
+   "lat": 26.219,
+   "lng": 84.357,
+   "isPopular": false
+  },
+  {
+   "code": "BTH",
+   "name": "Bettiah",
+   "city": "Bettiah",
+   "state": "Bihar",
+   "zone": "ECR",
+   "lat": 26.801,
+   "lng": 84.503,
+   "isPopular": false
+  },
+  {
+   "code": "RXL",
+   "name": "Raxaul Junction",
+   "city": "Raxaul",
+   "state": "Bihar",
+   "zone": "ECR",
+   "lat": 26.986,
+   "lng": 84.852,
+   "isPopular": false
+  },
+  {
+   "code": "BGP",
+   "name": "Bhagalpur Junction",
+   "city": "Bhagalpur",
+   "state": "Bihar",
+   "zone": "ER",
+   "lat": 25.244,
+   "lng": 86.984,
+   "isPopular": false
+  },
+  {
+   "code": "DDU",
+   "name": "Pt. Deen Dayal Upadhyaya Junction",
+   "city": "Chandauli",
+   "state": "Uttar Pradesh",
+   "zone": "ECR",
+   "lat": 25.2785,
+   "lng": 83.119,
+   "isPopular": false
+  },
+  {
+   "code": "BSB",
+   "name": "Varanasi Junction",
+   "city": "Varanasi",
+   "state": "Uttar Pradesh",
+   "zone": "NR",
+   "lat": 25.327,
+   "lng": 82.987,
+   "isPopular": true
+  },
+  {
+   "code": "BSBS",
+   "name": "Banaras",
+   "city": "Varanasi",
+   "state": "Uttar Pradesh",
+   "zone": "NER",
+   "lat": 25.289,
+   "lng": 82.97,
+   "isPopular": false
+  },
+  {
+   "code": "PRYJ",
+   "name": "Prayagraj Junction",
+   "city": "Prayagraj",
+   "state": "Uttar Pradesh",
+   "zone": "NCR",
+   "lat": 25.446,
+   "lng": 81.825,
+   "isPopular": false
+  },
+  {
+   "code": "CNB",
+   "name": "Kanpur Central",
+   "city": "Kanpur",
+   "state": "Uttar Pradesh",
+   "zone": "NCR",
+   "lat": 26.454,
+   "lng": 80.351,
+   "isPopular": true
+  },
+  {
+   "code": "LKO",
+   "name": "Lucknow Charbagh",
+   "city": "Lucknow",
+   "state": "Uttar Pradesh",
+   "zone": "NR",
+   "lat": 26.832,
+   "lng": 80.922,
+   "isPopular": true
+  },
+  {
+   "code": "LJN",
+   "name": "Lucknow Junction",
+   "city": "Lucknow",
+   "state": "Uttar Pradesh",
+   "zone": "NER",
+   "lat": 26.831,
+   "lng": 80.925,
+   "isPopular": false
+  },
+  {
+   "code": "GKP",
+   "name": "Gorakhpur Junction",
+   "city": "Gorakhpur",
+   "state": "Uttar Pradesh",
+   "zone": "NER",
+   "lat": 26.76,
+   "lng": 83.382,
+   "isPopular": false
+  },
+  {
+   "code": "AY",
+   "name": "Ayodhya Junction",
+   "city": "Ayodhya",
+   "state": "Uttar Pradesh",
+   "zone": "NR",
+   "lat": 26.793,
+   "lng": 82.202,
+   "isPopular": false
+  },
+  {
+   "code": "AGC",
+   "name": "Agra Cantt",
+   "city": "Agra",
+   "state": "Uttar Pradesh",
+   "zone": "NCR",
+   "lat": 27.158,
+   "lng": 77.99,
+   "isPopular": false
+  },
+  {
+   "code": "MTJ",
+   "name": "Mathura Junction",
+   "city": "Mathura",
+   "state": "Uttar Pradesh",
+   "zone": "NCR",
+   "lat": 27.481,
+   "lng": 77.673,
+   "isPopular": false
+  },
+  {
+   "code": "MB",
+   "name": "Moradabad",
+   "city": "Moradabad",
+   "state": "Uttar Pradesh",
+   "zone": "NR",
+   "lat": 28.824,
+   "lng": 78.781,
+   "isPopular": false
+  },
+  {
+   "code": "BE",
+   "name": "Bareilly",
+   "city": "Bareilly",
+   "state": "Uttar Pradesh",
+   "zone": "NR",
+   "lat": 28.362,
+   "lng": 79.417,
+   "isPopular": false
+  },
+  {
+   "code": "VGLJ",
+   "name": "Virangana Lakshmibai Jhansi",
+   "city": "Jhansi",
+   "state": "Uttar Pradesh",
+   "zone": "NCR",
+   "lat": 25.444,
+   "lng": 78.565,
+   "isPopular": false
+  },
+  {
+   "code": "GWL",
+   "name": "Gwalior Junction",
+   "city": "Gwalior",
+   "state": "Madhya Pradesh",
+   "zone": "NCR",
+   "lat": 26.217,
+   "lng": 78.183,
+   "isPopular": false
+  },
+  {
+   "code": "BPL",
+   "name": "Bhopal Junction",
+   "city": "Bhopal",
+   "state": "Madhya Pradesh",
+   "zone": "WCR",
+   "lat": 23.2665,
+   "lng": 77.413,
+   "isPopular": true
+  },
+  {
+   "code": "RKMP",
+   "name": "Rani Kamlapati",
+   "city": "Bhopal",
+   "state": "Madhya Pradesh",
+   "zone": "WCR",
+   "lat": 23.2215,
+   "lng": 77.441,
+   "isPopular": false
+  },
+  {
+   "code": "ET",
+   "name": "Itarsi Junction",
+   "city": "Itarsi",
+   "state": "Madhya Pradesh",
+   "zone": "WCR",
+   "lat": 22.611,
+   "lng": 77.762,
+   "isPopular": false
+  },
+  {
+   "code": "JBP",
+   "name": "Jabalpur",
+   "city": "Jabalpur",
+   "state": "Madhya Pradesh",
+   "zone": "WCR",
+   "lat": 23.165,
+   "lng": 79.95,
+   "isPopular": false
+  },
+  {
+   "code": "INDB",
+   "name": "Indore Junction",
+   "city": "Indore",
+   "state": "Madhya Pradesh",
+   "zone": "WR",
+   "lat": 22.717,
+   "lng": 75.868,
+   "isPopular": false
+  },
+  {
+   "code": "UJN",
+   "name": "Ujjain Junction",
+   "city": "Ujjain",
+   "state": "Madhya Pradesh",
+   "zone": "WR",
+   "lat": 23.179,
+   "lng": 75.784,
+   "isPopular": false
+  },
+  {
+   "code": "ADI",
+   "name": "Ahmedabad Junction",
+   "city": "Ahmedabad",
+   "state": "Gujarat",
+   "zone": "WR",
+   "lat": 23.026,
+   "lng": 72.601,
+   "isPopular": true
+  },
+  {
+   "code": "ST",
+   "name": "Surat",
+   "city": "Surat",
+   "state": "Gujarat",
+   "zone": "WR",
+   "lat": 21.205,
+   "lng": 72.841,
+   "isPopular": false
+  },
+  {
+   "code": "BRC",
+   "name": "Vadodara Junction",
+   "city": "Vadodara",
+   "state": "Gujarat",
+   "zone": "WR",
+   "lat": 22.311,
+   "lng": 73.181,
+   "isPopular": false
+  },
+  {
+   "code": "RJT",
+   "name": "Rajkot Junction",
+   "city": "Rajkot",
+   "state": "Gujarat",
+   "zone": "WR",
+   "lat": 22.311,
+   "lng": 70.803,
+   "isPopular": false
+  },
+  {
+   "code": "JAM",
+   "name": "Jamnagar",
+   "city": "Jamnagar",
+   "state": "Gujarat",
+   "zone": "WR",
+   "lat": 22.473,
+   "lng": 70.057,
+   "isPopular": false
+  },
+  {
+   "code": "BVC",
+   "name": "Bhavnagar Terminus",
+   "city": "Bhavnagar",
+   "state": "Gujarat",
+   "zone": "WR",
+   "lat": 21.77,
+   "lng": 72.15,
+   "isPopular": false
+  },
+  {
+   "code": "JP",
+   "name": "Jaipur Junction",
+   "city": "Jaipur",
+   "state": "Rajasthan",
+   "zone": "NWR",
+   "lat": 26.92,
+   "lng": 75.787,
+   "isPopular": true
+  },
+  {
+   "code": "AII",
+   "name": "Ajmer Junction",
+   "city": "Ajmer",
+   "state": "Rajasthan",
+   "zone": "NWR",
+   "lat": 26.456,
+   "lng": 74.638,
+   "isPopular": false
+  },
+  {
+   "code": "JU",
+   "name": "Jodhpur Junction",
+   "city": "Jodhpur",
+   "state": "Rajasthan",
+   "zone": "NWR",
+   "lat": 26.285,
+   "lng": 73.023,
+   "isPopular": false
+  },
+  {
+   "code": "UDZ",
+   "name": "Udaipur City",
+   "city": "Udaipur",
+   "state": "Rajasthan",
+   "zone": "NWR",
+   "lat": 24.571,
+   "lng": 73.691,
+   "isPopular": false
+  },
+  {
+   "code": "BKN",
+   "name": "Bikaner Junction",
+   "city": "Bikaner",
+   "state": "Rajasthan",
+   "zone": "NWR",
+   "lat": 28.018,
+   "lng": 73.317,
+   "isPopular": false
+  },
+  {
+   "code": "KOTA",
+   "name": "Kota Junction",
+   "city": "Kota",
+   "state": "Rajasthan",
+   "zone": "WCR",
+   "lat": 25.219,
+   "lng": 75.878,
+   "isPopular": false
+  },
+  {
+   "code": "CDG",
+   "name": "Chandigarh",
+   "city": "Chandigarh",
+   "state": "Chandigarh",
+   "zone": "NR",
+   "lat": 30.7,
+   "lng": 76.82,
+   "isPopular": true
+  },
+  {
+   "code": "UMB",
+   "name": "Ambala Cantt Junction",
+   "city": "Ambala",
+   "state": "Haryana",
+   "zone": "NR",
+   "lat": 30.338,
+   "lng": 76.827,
+   "isPopular": false
+  },
+  {
+   "code": "LDH",
+   "name": "Ludhiana Junction",
+   "city": "Ludhiana",
+   "state": "Punjab",
+   "zone": "NR",
+   "lat": 30.912,
+   "lng": 75.848,
+   "isPopular": false
+  },
+  {
+   "code": "JUC",
+   "name": "Jalandhar City",
+   "city": "Jalandhar",
+   "state": "Punjab",
+   "zone": "NR",
+   "lat": 31.333,
+   "lng": 75.585,
+   "isPopular": false
+  },
+  {
+   "code": "ASR",
+   "name": "Amritsar Junction",
+   "city": "Amritsar",
+   "state": "Punjab",
+   "zone": "NR",
+   "lat": 31.633,
+   "lng": 74.867,
+   "isPopular": false
+  },
+  {
+   "code": "JAT",
+   "name": "Jammu Tawi",
+   "city": "Jammu",
+   "state": "Jammu and Kashmir",
+   "zone": "NR",
+   "lat": 32.706,
+   "lng": 74.88,
+   "isPopular": false
+  },
+  {
+   "code": "SVDK",
+   "name": "Shri Mata Vaishno Devi Katra",
+   "city": "Katra",
+   "state": "Jammu and Kashmir",
+   "zone": "NR",
+   "lat": 32.98,
+   "lng": 74.931,
+   "isPopular": false
+  },
+  {
+   "code": "DDN",
+   "name": "Dehradun",
+   "city": "Dehradun",
+   "state": "Uttarakhand",
+   "zone": "NR",
+   "lat": 30.315,
+   "lng": 78.033,
+   "isPopular": false
+  },
+  {
+   "code": "HW",
+   "name": "Haridwar Junction",
+   "city": "Haridwar",
+   "state": "Uttarakhand",
+   "zone": "NR",
+   "lat": 29.947,
+   "lng": 78.16,
+   "isPopular": false
+  },
+  {
+   "code": "GHY",
+   "name": "Guwahati",
+   "city": "Guwahati",
+   "state": "Assam",
+   "zone": "NFR",
+   "lat": 26.182,
+   "lng": 91.751,
+   "isPopular": true
+  },
+  {
+   "code": "KYQ",
+   "name": "Kamakhya",
+   "city": "Guwahati",
+   "state": "Assam",
+   "zone": "NFR",
+   "lat": 26.158,
+   "lng": 91.671,
+   "isPopular": false
+  },
+  {
+   "code": "DBRG",
+   "name": "Dibrugarh",
+   "city": "Dibrugarh",
+   "state": "Assam",
+   "zone": "NFR",
+   "lat": 27.476,
+   "lng": 94.911,
+   "isPopular": false
+  },
+  {
+   "code": "BBS",
+   "name": "Bhubaneswar",
+   "city": "Bhubaneswar",
+   "state": "Odisha",
+   "zone": "ECoR",
+   "lat": 20.266,
+   "lng": 85.843,
+   "isPopular": true
+  },
+  {
+   "code": "CTC",
+   "name": "Cuttack",
+   "city": "Cuttack",
+   "state": "Odisha",
+   "zone": "ECoR",
+   "lat": 20.467,
+   "lng": 85.893,
+   "isPopular": false
+  },
+  {
+   "code": "PURI",
+   "name": "Puri",
+   "city": "Puri",
+   "state": "Odisha",
+   "zone": "ECoR",
+   "lat": 19.805,
+   "lng": 85.818,
+   "isPopular": false
+  },
+  {
+   "code": "RNC",
+   "name": "Ranchi",
+   "city": "Ranchi",
+   "state": "Jharkhand",
+   "zone": "SER",
+   "lat": 23.349,
+   "lng": 85.338,
+   "isPopular": false
+  },
+  {
+   "code": "TATA",
+   "name": "Tatanagar Junction",
+   "city": "Jamshedpur",
+   "state": "Jharkhand",
+   "zone": "SER",
+   "lat": 22.769,
+   "lng": 86.203,
+   "isPopular": false
+  },
+  {
+   "code": "DHN",
+   "name": "Dhanbad Junction",
+   "city": "Dhanbad",
+   "state": "Jharkhand",
+   "zone": "ECR",
+   "lat": 23.792,
+   "lng": 86.43,
+   "isPopular": false
+  },
+  {
+   "code": "R",
+   "name": "Raipur Junction",
+   "city": "Raipur",
+   "state": "Chhattisgarh",
+   "zone": "SECR",
+   "lat": 21.258,
+   "lng": 81.63,
+   "isPopular": false
+  },
+  {
+   "code": "BSP",
+   "name": "Bilaspur Junction",
+   "city": "Bilaspur",
+   "state": "Chhattisgarh",
+   "zone": "SECR",
+   "lat": 22.081,
+   "lng": 82.16,
+   "isPopular": false
+  },
+  {
+   "code": "DURG",
+   "name": "Durg Junction",
+   "city": "Durg",
+   "state": "Chhattisgarh",
+   "zone": "SECR",
+   "lat": 21.19,
+   "lng": 81.285,
+   "isPopular": false
+  },
+  {
+   "code": "TVC",
+   "name": "Thiruvananthapuram Central",
+   "city": "Thiruvananthapuram",
+   "state": "Kerala",
+   "zone": "SR",
+   "lat": 8.488,
+   "lng": 76.952,
+   "isPopular": false
+  },
+  {
+   "code": "ERS",
+   "name": "Ernakulam Junction",
+   "city": "Kochi",
+   "state": "Kerala",
+   "zone": "SR",
+   "lat": 9.969,
+   "lng": 76.29,
+   "isPopular": true
+  },
+  {
+   "code": "CLT",
+   "name": "Kozhikode",
+   "city": "Kozhikode",
+   "state": "Kerala",
+   "zone": "SR",
+   "lat": 11.247,
+   "lng": 75.781,
+   "isPopular": false
+  },
+  {
+   "code": "MAO",
+   "name": "Madgaon Junction",
+   "city": "Margao",
+   "state": "Goa",
+   "zone": "KR",
+   "lat": 15.27,
+   "lng": 73.968,
+   "isPopular": false
+  },
+  {
+   "code": "RN",
+   "name": "Ratnagiri",
+   "city": "Ratnagiri",
+   "state": "Maharashtra",
+   "zone": "KR",
+   "lat": 16.99,
+   "lng": 73.327,
+   "isPopular": false
+  }
+ ]
+}

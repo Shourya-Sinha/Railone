@@ -1,0 +1,8 @@
+node_modules
+dist
+.env
+*.log
+coverage
+web/test-results
+web/playwright-report
+server/src/generated
